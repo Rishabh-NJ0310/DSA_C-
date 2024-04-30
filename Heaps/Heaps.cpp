@@ -77,11 +77,11 @@ void heapify(int arr[], int n, int index){
 
 int main(){
     heap h;
-    // h.insert(30);
-    // h.insert(10);
-    // h.insert(20);
-    // h.insert(40);
-    // h.print();
+    h.insert(30);
+    h.insert(10);
+    h.insert(20);
+    h.insert(40);
+    h.print();
     int arr[] = {-1,50,51,55,52,56,54,53}; 
 
     /*
