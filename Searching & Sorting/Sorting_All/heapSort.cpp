@@ -7,14 +7,12 @@ void build_maxHeap(vector<int> &arr, int n, int i){
     int largest = i;
     int left = 2*i + 1;
     int right = 2*i + 2;
-
     if(left < n && arr[left] > arr[largest]){
         largest = left;
     }
     if(right < n && arr[right] > arr[largest]){
         largest = right;
     }
-
     if(largest != i){
         swap(arr[i], arr[largest]);
         build_maxHeap(arr, n, largest);
@@ -25,14 +23,12 @@ void build_minHeap(vector<int> &arr, int n, int i){
     int smallest = i;
     int left = 2*i + 1;
     int right = 2*i + 2;
-
     if(left < n && arr[left] < arr[smallest]){
         smallest = left;
     }
     if(right < n && arr[right] < arr[smallest]){
         smallest = right;
     }
-
     if(smallest != i){
         swap(arr[i], arr[smallest]);
         build_minHeap(arr, n, smallest);
