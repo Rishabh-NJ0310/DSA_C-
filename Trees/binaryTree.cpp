@@ -58,7 +58,6 @@ void buildTreeLevelOrder(node* root){
 /*****************************************/
 /**         Traversal of Trees         **/
 
-
 void inOrder(node* root){
     if(root == NULL){
         return;
