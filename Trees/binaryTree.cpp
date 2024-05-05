@@ -15,12 +15,10 @@ class node{
 };
 
 node* buildTree(node* root){
-
     cout<<"Enter data: "<<endl;
     int data;
     cin>>data;
     root = new node(data);
-
     if(data == -1){
         return NULL;
     }
@@ -95,7 +93,6 @@ void levelOrderTraversal(node *root) {
     while(!q.empty()){
         node* temp = q.front();
         q.pop();
-
         if(temp == NULL){
             cout<<endl;
             if(!q.empty()){
@@ -114,6 +111,31 @@ void levelOrderTraversal(node *root) {
     }
 }
 
+void verticalOrderTraversal(node* root){
+    map<int, vector<int>> m;
+    queue<pair<node*, int>> q;
+    q.push({root, 0});
+    while(!q.empty()){
+        pair<node*, int> temp = q.front();
+        q.pop();
+        node* curr = temp.first;
+        int hd = temp.second;
+        m[hd].push_back(curr->data);
+        if(curr->left){
+            q.push({curr->left, hd-1});
+        }
+        if(curr->right){
+            q.push({curr->right, hd+1});
+        }
+    }
+    for(auto x: m){
+        for(auto y: x.second){
+            cout<<y<<" ";
+        }
+        cout<<endl;
+    }
+}
+/**          End of Traversals           **/
 /*****************************************/
 
 int main(){
