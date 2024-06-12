@@ -2,18 +2,18 @@
 using namespace std;
 
 int partition(int arr[], int s, int e){
-    /*
+    // best method
     int pivot = arr[e];
     int i = s-1;
     for(int j=s; j<e; j++){
-        if(arr[j]<pivot){
+        if(arr[j]<=pivot){
             i++;
             swap(arr[i], arr[j]);
         }
     }
     swap(arr[i+1], arr[e]);
     return i+1;
-    */
+    /*
     int pivot = arr[s];
     int cnt = 0;
     for(int i=s+1; i<=e; i++){
@@ -24,7 +24,9 @@ int partition(int arr[], int s, int e){
     int pivotIndex = s+cnt;
     swap(arr[s], arr[pivotIndex]);
     int i = s, j = e;
+    
     while(i<pivotIndex && j>pivotIndex){
+    */
 // 1st method
         /* 
         if(arr[i]<=pivot){
@@ -49,6 +51,7 @@ int partition(int arr[], int s, int e){
         }
         */
 // 3rd method
+/*
         while(arr[i] < pivot){
             i++;
         }
@@ -61,6 +64,7 @@ int partition(int arr[], int s, int e){
             j--;
         }
     }
+    */
 }
 void quickSort(int arr[], int s, int e){
     if(s>=e){
