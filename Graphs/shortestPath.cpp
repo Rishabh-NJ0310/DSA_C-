@@ -1,24 +1,25 @@
 #include<bits/stdc++.h>  // only for competitive programming not for developing
 using namespace std;
-template<typename T>
-#define f(n) for(int i=0;i<n;i++)
-#define fr(i,n) for(int i=n-1;i>=0;i--)
-#define ff(i,a,b) for(int i=a;i<b;i++)
-#define frf(i,a,b) for(int i=a;i>=b;i--)
-#define pb push_back
-#define ll long long
-#define vT vector<T>
-#define gcd(a,b) __gcd(a,b)
-#define lcm(a,b) (a*b)/__gcd(a,b)
-#define mod 1000000007
-void i_o_f(){
-ios_base::sync_with_stdio(false);
-cin.tie(nullptr);
-cout.tie(nullptr);
-//#ifndef ONLINE_JUDGE
-//freopen("input.txt", "r", stdin);
-//freopen("output.txt", "w", stdout);
-//#endif
+
+    template<typename T>
+    #define f(n) for(int i=0;i<n;i++)
+    #define fr(i,n) for(int i=n-1;i>=0;i--)
+    #define ff(i,a,b) for(int i=a;i<b;i++)
+    #define frf(i,a,b) for(int i=a;i>=b;i--)
+    #define pb push_back
+    #define ll long long
+    #define vT vector<T>
+    #define gcd(a,b) __gcd(a,b)
+    #define lcm(a,b) (a*b)/__gcd(a,b)
+    #define mod 1000000007
+    void i_o_f(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    //#ifndef ONLINE_JUDGE
+    //freopen("input.txt", "r", stdin);
+    //freopen("output.txt", "w", stdout);
+    //#endif
 }
 
 class Graph{
