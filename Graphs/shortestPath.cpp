@@ -12,7 +12,9 @@ using namespace std;
     #define gcd(a,b) __gcd(a,b)
     #define lcm(a,b) (a*b)/__gcd(a,b)
     #define mod 1000000007
-    void i_o_f(){
+
+    
+void i_o_f(){
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
