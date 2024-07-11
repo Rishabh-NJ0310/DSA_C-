@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        ".env*": "dotenv",
+        "ostream": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
+    }
+}
