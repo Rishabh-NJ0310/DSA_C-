@@ -53,6 +53,20 @@ vector<int> bellmonFord(int n, int m, int src, vector<vector<int>> &edges) {
 int main(){
 
 i_o_f();
+int n,m;
+cin>>n>>m;
+vector<vector<int>> edges;
+for(int i=0;i<m;i++){
+    int u,v,w;
+    cin>>u>>v>>w;
+    edges.push_back({u,v,w});
+}
+int src;
+cin>>src;
+vector<int> ans = bellmonFord(n,m,src,edges);
+for(auto i:ans){
+    cout<<i<<" ";
+}
 
 return 0;
 }
