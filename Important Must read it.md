@@ -28,3 +28,14 @@ Full DSA in C++
 
 }
 ```
+
+# Youtube reference
+```json
+{
+    // love babbar DSA  Recommended for 3rd Year students to cover DSA topic in less time
+    "Codehelp":"https://www.youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA", 
+    // Striver A-Z DSA course Recommended for 2nd Year Students + those who are comfortable in english
+    "Takeuforward":"https://www.youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz",
+    // Those who want to learn DSA + Development in JAVA
+    "Telusko":"https://www.youtube.com/watch?v=4XTsAAHW_Tc"
+}
