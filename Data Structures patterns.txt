@@ -8,8 +8,11 @@ tree
 Algorithms:
 Sorting -> quick sort, merge sort, bubble sort, insertion sort, selection sort, heap sort {counting sort, radix sort, bucket sort}
 searching -> binary search, linear search
+
+**rare cases && but easy question on{
 dynamic programming -> recrusion + memoization, tabulation
 greedy algorithms -> knapsack, job scheduling, huffman coding
+}
 
 Strings algorithms:
 1. KMP
@@ -17,7 +20,6 @@ Strings algorithms:
 3. Z algorithm
 
 practice patterns:
-
 1. Array
 a1 -> two pointer
 a2 -> sliding window
@@ -96,7 +98,7 @@ r16 -> combination sum
 r17 -> combination sum 2
 r18 -> palindrome partitioning
 
-
+// for practice but this may not be enough first implement all the graph algorithm
 7. Graph
 g1 -> graph traversal -> bfs, dfs
 g2 -> shortest path -> dijkstra, bellman ford, floyd warshall
@@ -118,5 +120,3 @@ g17 -> network delay time
 g18 -> clone graph
 g19 -> word ladder
 g20 -> word ladder 2
-g21 -> word search
-g22 -> word search 2\
