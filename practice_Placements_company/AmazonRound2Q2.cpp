@@ -33,18 +33,22 @@ using namespace std;
 
 int getLongestMatch(string text, string regex) {
     int starPos = regex.find('*');
-    string prefix = regex.substr(0, starPos); 
+    string prefix = regex.substr(0, starPos);  
     string suffix = regex.substr(starPos + 1); 
     
     int n = text.size();
+    int pLen = prefix.size();
+    int sLen = suffix.size();
+    
     int longestMatch = -1;
     
-    for (int i = 0; i <= n - prefix.size(); ++i) {
-        if (text.substr(i, prefix.size()) == prefix) {
-            for (int j = i + prefix.size(); j <= n - suffix.size(); ++j) {
-                if (text.substr(j, suffix.size()) == suffix) {
-                    int currentLength = j + suffix.size() - i;
+    for (int i = 0; i <= n - pLen; ++i) {
+        if (text.compare(i, pLen, prefix) == 0) {
+            for (int j = i + pLen; j + sLen <= n; ++j) {
+                if (text.compare(j, sLen, suffix) == 0) {
+                    int currentLength = j + sLen - i;
                     longestMatch = max(longestMatch, currentLength);
+                    break; 
                 }
             }
         }
