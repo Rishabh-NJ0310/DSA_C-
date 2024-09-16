@@ -23,7 +23,7 @@ Returns
 int: the length of the longest substring of text that matches regex or -1 if there is none
 
 Constraints
-    1≤ | text |, | regex ≤105
+    1≤ | text |, | regex ≤10^5
     text contains lowercase English Letters only.
     regex contains lowercase English letters and exactly one wildcard(*) character.
 */
@@ -32,23 +32,27 @@ Constraints
 using namespace std;
 
 int getLongestMatch(string text, string regex) {
+
     int starPos = regex.find('*');
-    string prefix = regex.substr(0, starPos);  
-    string suffix = regex.substr(starPos + 1); 
     
+    
+    string prefix = regex.substr(0, starPos);    
+    string suffix = regex.substr(starPos + 1);  
+
     int n = text.size();
     int pLen = prefix.size();
     int sLen = suffix.size();
-    
+
     int longestMatch = -1;
+    
     
     for (int i = 0; i <= n - pLen; ++i) {
         if (text.compare(i, pLen, prefix) == 0) {
             for (int j = i + pLen; j + sLen <= n; ++j) {
                 if (text.compare(j, sLen, suffix) == 0) {
+                
                     int currentLength = j + sLen - i;
                     longestMatch = max(longestMatch, currentLength);
-                    break; 
                 }
             }
         }
