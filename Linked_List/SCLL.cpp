@@ -77,7 +77,8 @@ void print(Node* tail){
     if(tail == NULL){
         cout<<"List is empty"<<endl;
         return;
-    }else {do{
+    }else {
+        do{
         cout<<tail->data<<" ";
         tail = tail->next;
     }while(tail != temp);

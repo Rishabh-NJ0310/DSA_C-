@@ -83,13 +83,6 @@ void print(Node* tail){
 }
 
 
-
-
-
-
-
-
-
 int main(){
 Node* tail = NULL;
 insertNode(tail, 1, 1);
